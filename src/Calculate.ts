@@ -1217,7 +1217,7 @@ export const calculateAscensionAcceleration = () => {
         1 + 0.002 * sumContents(player.usedCorruptions) * player.platonicUpgrades[15],                  // PLAT Omega
         G['challenge15Rewards'].ascensionSpeed,                                                         // C15
     ]
-    return productContents(arr)
+    return productContents(arr)*1000
 }
 
 export const calculateCorruptionPoints = () => {
