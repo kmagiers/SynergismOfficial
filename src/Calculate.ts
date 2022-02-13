@@ -1203,7 +1203,7 @@ export const calculateTimeAcceleration = () => {
     if (timeMult > 3600 && player.achievements[242] < 1) {
         achievementaward(242)
     }
-    return (timeMult)
+    return (timeMult*1000)
 }
 
 export const calculateAscensionAcceleration = () => {
@@ -1217,7 +1217,7 @@ export const calculateAscensionAcceleration = () => {
         1 + 0.002 * sumContents(player.usedCorruptions) * player.platonicUpgrades[15],                  // PLAT Omega
         G['challenge15Rewards'].ascensionSpeed,                                                         // C15
     ]
-    return productContents(arr)*1000
+    return (productContents(arr)*1000)
 }
 
 export const calculateCorruptionPoints = () => {
