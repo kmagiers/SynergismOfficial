@@ -137,7 +137,7 @@ export class QuarkHandler {
 
     /*** Calculates the number of quarks to give with the current bonus. */
     applyBonus(amount: number) {
-        return amount * (1 + (this.BONUS / 100)) * 500;
+        return amount * (1 + (this.BONUS / 100));
     }
 
     /** Subtracts quarks, as the name suggests. */
